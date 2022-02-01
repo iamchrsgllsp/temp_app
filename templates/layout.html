@@ -1,8 +1,11 @@
 <!doctype html>
 <title>{% block title %}{% endblock %} - TempApp</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
 <nav>
-  <h1>Flaskr</h1>
+  <h1>TempApp</h1>
   <ul>
     {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>
