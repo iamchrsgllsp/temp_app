@@ -7,4 +7,3 @@ app = Flask(__name__)
 def test():
     return render_template("home.html")
 
-app.run()
