@@ -2,7 +2,9 @@ from flask import Flask, render_template, request, url_for
 
 app = Flask(__name__)
 
-# import declared routes
-import routes
+
+@app.route('/', methods=['GET'])
+def test():
+    return render_template("home.html")
 
 app.run()
