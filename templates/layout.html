@@ -1,18 +1,20 @@
 <!doctype html>
 <title>{% block title %}{% endblock %} - TempApp</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
 <nav>
-  <h1>TempApp</h1>
+  <div class="header"><h1>TempApp</h1><img src="https://i.pinimg.com/originals/ef/c5/cf/efc5cfdfabf790c58e1acf288fb5ccac.png" style="height:100px"></div>
   <ul>
     {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>
       <li><a href="{{ url_for('test') }}">Log Out</a>
     {% else %}
       <li><a href="{{ url_for('test') }}">Register</a>
-      <li><a href="{{ url_for('test') }}">Log In</a>
+      <li><a href="{{ url_for('login') }}">Log In</a>
     {% endif %}
   </ul>
 </nav>

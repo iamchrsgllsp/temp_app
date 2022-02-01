@@ -4,6 +4,16 @@
 }
 
 body{
+    
+}
+
+.header, nav{
     color:coral;
-    background-color: #8D918D;
+    background-color: white;
+    display:flex;
+    justify-content:space-between;
+}
+
+.homecontent{
+    text-align:center;
 }
