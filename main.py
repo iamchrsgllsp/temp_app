@@ -9,4 +9,3 @@ def test():
     data = database.enter()
     return render_template("home.html",data = data)
 
-app.run(debug=True)
